@@ -1,23 +1,23 @@
-# 🚍 Web venta pasajes 🎟️
+# 🚍 Web Venta Pasajes 🎟️
 
-## 💻 Requerimientos:
+### 💻 Requerimientos:
 
 - NodeJs => v10.18.0;
 - NPM => v6.13.4;
 
-## 🚀 Comencemos:
+### 🚀 Comencemos:
 
-1. clonar el proyecto
-2. `cd nameFolder`
-3. `npm install`
-4. `npm run start`
+1. Clonar el proyecto
+2. Ingresa a la capeta del proyecto `cd nameFolder`
+3. Instalar dependencias `npm install`
+4. Inciar proyecto en local `npm run start`
 
-## 📋 Consideraciones:
+### 📋 Consideraciones:
 
 - Los archivos modo desarrollo estan en la carpeta: `src`
 - El archivo webpack.config.js contiene las configuraciones de webpack.
 
-## ⌨️ Scripts:
+### ⌨️ Scripts:
 
 - Crear el proyecto para producción:
 
@@ -31,7 +31,7 @@
   - editar package.json: `homepage: url`
   - comando: `npm run deploy`
 
-## 📁 Esructura:
+### 📁 Estructura:
 
 ```
 ├── .babelrc
