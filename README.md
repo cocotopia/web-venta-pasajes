@@ -1,35 +1,35 @@
-# Workflow using Webpack
+# Web venta pasajes
 
-## Requirements to run the project
+## Requerimientos:
 
 - NodeJs => v10.18.0;
 - NPM => v6.13.4;
 
-## How to use it:
+## Comencemos:
 
-1. clone the project
+1. clonar el proyecto
 2. `cd nameFolder`
 3. `npm install`
 4. `npm run start`
 
-## Considerations
+## Consideraciones:
 
-- Files to work in developement mode are in: `src`
-- The webpack.config.js file is to configure webpack.
+- Los archivos modo desarrollo estan en la carpeta: `src`
+- El archivo webpack.config.js contiene las configuraciones de webpack.
 
-## Scripts created
+## Scripts:
 
-- Delete and create the project in production:
+- Crear el proyecto para producción:
 
-  - It starts with: `npm run buid'`
+  - comando: `npm run buid'`
 
-- start a local server for development:
+- Iniciar el proyecto en modo desarrollo (local):
 
-  - It starts with: `npm run start`
+  - comando: `npm run start`
 
-- Deploy to gh-pages:
-  - edit package.json: `homepage: url`
-  - it starts with: `npm run deploy`
+- Desplegar a gh-pages:
+  - editar package.json: `homepage: url`
+  - comando: `npm run deploy`
 
 ## Folder structure:
 
@@ -42,17 +42,19 @@
 ├── webpack.config.js
 ├── node_modules
 ├── dist
-│   ├── fonts
 │   ├── img
 │   ├── css
-│   │  └── style.css
+│   │  └── app.css
 │   ├── js
-│   │   └── main.js
-│   └── index.html
+│   │   └── app.js
+│   ├── index.html
+│   ├── home.html
+│   ├── lista.html
+│   ├── detalle.html
+│   └── contacto.html
 └── src
-    ├── components
-    ├── fonts
-    ├── img
+    ├── includes
+    ├── images
     ├── sass
     │   ├── base
     │   ├── components
@@ -61,6 +63,10 @@
     │   ├── utilities
     │   ├── views
     │   └── style.scss
-    ├── index.html
+    ├── index.pug
+    ├── home.pug
+    ├── lista.pug
+    ├── detalle.pug
+    ├── contacto.pug
     └── main.js
 ```
