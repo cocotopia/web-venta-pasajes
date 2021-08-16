@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+/* @import 'base/reset';
+@import 'base/typo';
+@import 'base/fonts';
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins'; */
+@import "views/home";
+/* @import 'layouts/container';
+@import 'layouts/mobile';
+@import 'components/buttons'; */
+@import "components/nav-steps";

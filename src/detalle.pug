@@ -1,0 +1,443 @@
+include includes/header.pug
+
+div.clearfix
+
+nav(aria-label='breadcrumb')
+  ol.breadcrumb.nav-steps
+    li.breadcrumb-item.step.ok
+      i.far.fa-check-circle
+      a(href='#') Ida 14/08/2021
+    li.breadcrumb-item.step.active(aria-current='page')
+      span.number 2 
+      | Asientos
+    li.breadcrumb-item.step
+      span.number 3
+      | Pago
+    li.breadcrumb-item.step
+      span.number 4
+      | Confirmación
+
+section#asientosSeccion
+  .container-fluid
+    .row.pt-3.pb-3
+      .col-12.col-lg-7.mb-4.mb-md-4.mb-lg-0
+        .card
+          .card-body
+            .row
+              .col-12
+                h6.card-title.font-weight-bold.d-none.d-sm-block
+                  | Lima - Arequipa (Cruzero Evolution)
+                  span.float-right 28 de Abril del 2021
+                h6.card-title.font-weight-bold.d-block.d-sm-none
+                  | Lima - Arequipa (Cruzero Evolution)
+                h6.card-title.font-weight-bold.d-block.d-sm-none
+                  | 28 de Abril del 2021
+              .col-12
+                hr.mb-3.mt-0
+              .col-12
+                p.font-weight-bold.leyenda.d-none.d-sm-block
+                  | Leyenda
+                  span.float-right
+                    span.badge.badge-pill.badge-primary Disponible
+                    span.badge.badge-pill.badge-locura Locura
+                    span.badge.badge-pill.badge-danger Insuperable
+                    span.badge.badge-pill.badge-warning De Ocaci&oacute;n
+                    span.badge.badge-pill.badge-secondary Ocupado
+                p.font-weight-bold.leyenda.d-block.d-sm-none
+                  | Leyenda
+                p.font-weight-bold.leyenda.d-block.d-sm-none
+                  span.float-right
+                    span.badge.badge-pill.badge-primary Disponible
+                    span.badge.badge-pill.badge-locura Locura
+                    span.badge.badge-pill.badge-danger Insuperable
+                    span.badge.badge-pill.badge-warning De Ocaci&oacute;n
+                    span.badge.badge-pill.badge-secondary Ocupado
+              .col-12.busEstructura.p-1
+                .container-fluid
+                  .row
+                    .col-12
+                    .col-12.shadow.rounded.p-2
+                      .container-fluid
+                        .row.primerPiso.pt-2.pb-2.mb-3
+                          .col-3
+                            img.img-fluid(src='images/50x50.jpg' alt='')
+                          .col-9
+                            span.font-weight-bold.text-uppercase.float-right Primer Piso
+                        .row.mb-3
+                          .col-6
+                            img.img-fluid(src='images/100x50.jpg' alt='')
+                          .col-6
+                            img.img-fluid.float-right(src='images/100x50.jpg' alt='')
+                        .row.dropdown.mb-3
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-disponible.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-locura.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                        .row.dropdown.mb-3
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-disponible.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-locura.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                        .row.dropdown.mb-3
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-disponible.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2
+                          #dropdownMenu2.col-3.col-lg-2.col-md-2.asiento-locura.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                        .row.primerPiso.pt-2.pb-2.mb-3
+                          .col-12
+                            span.font-weight-bold.text-uppercase.float-right Segundo Piso
+                        .row.mb-3.dropdown
+                          .col-3.col-lg-2.col-md-2.asiento-insuperable.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-deocacion.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                        .row.mb-3.dropdown
+                          .col-3.col-lg-2.col-md-2.asiento-insuperable.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-deocacion.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2
+                          .col-3.col-lg-2.col-md-2
+                        .row.mb-3.dropdown
+                          .col-3.col-lg-2.col-md-2.asiento-insuperable.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-deocacion.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-6.col-lg-4.col-md-4
+                            img.img-fluid(src='images/100x50.jpg' alt='')
+                        .row.mb-3.dropdown
+                          .col-3.col-lg-2.col-md-2.asiento-insuperable.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-deocacion.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2
+                          .col-3.col-lg-2.col-md-2
+                        .row.mb-3.dropdown
+                          .col-3.col-lg-2.col-md-2.asiento-insuperable.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-deocacion.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                        .row.mb-3.dropdown
+                          .col-3.col-lg-2.col-md-2.asiento-insuperable.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-deocacion.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                        .row.mb-3.dropdown
+                          .col-3.col-lg-2.col-md-2.asiento-insuperable.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-deocacion.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-lg-2.col-md-2.d-none.d-sm-block
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                          .col-3.col-lg-2.col-md-2.asiento-ocupado.d-flex.align-items-center.justify-content-center(data-toggle-second='tooltip' data-placement='top' title='Tooltip on top' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span.infoAsiento.d-none 01
+                            .dropdown-menu.dropdown(aria-labelledby='dropdownMenu2')
+                              button.dropdown-item(type='button')
+                                | Action
+                              button.dropdown-item(type='button')
+                                | Another action
+                              button.dropdown-item(type='button')
+                                | Something else here
+                    .col-12
+      .col-12.col-lg-5
+        .card
+          .card-body
+            .row
+              .col-12
+                h6.card-title.font-weight-bold
+                  | Modificar Embarque / Desembarque
+              .col-12
+                hr.mb-3.mt-0
+              .col-12
+                p.font-weight-bold.terminalEmbarque
+                  | Terminal de Embarque
+              .col-3
+                .form-check
+                  input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1' checked='')
+                  label.form-check-label.font-weight-bold(for='exampleRadios1')
+                    | 13:00
+              .col-9
+                p.font-weight-bold.mb-1 Plaza Norte
+                p.text-muted
+                  | Av. G. Unger 6917-Urb. Fiori-Stand 14 al 16
+              .col-3
+                .form-check
+                  input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1')
+                  label.form-check-label.font-weight-bold(for='exampleRadios1')
+                    | 14:00
+              .col-9
+                p.font-weight-bold.mb-1 Javier Prado
+                p.text-muted
+                  | Av. Javier Prado Este N&deg; 1109 Urb El Palomar Norte Lima -
+                  | Limna - La Victoria
+              .col-12
+                hr.mb-3.mt-0
+              .col-12
+                p.font-weight-bold.terminalDesembarque
+                  | Terminal de Desembarque
+              .col-3
+                .form-check
+                  input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1')
+                  label.form-check-label.font-weight-bold(for='exampleRadios1')
+                    | 14:00
+              .col-9
+                p.font-weight-bold.mb-1 Arequipa Terrapuerto
+                p.text-muted
+                  | Av. Arturo Ibanez SN. Pab. B Local 23-27
+              .col-12.mt-3
+                button.btn.btn-success.btn-lg.btn-block.btn-sm(type='button')
+                  | ACEPTAR
+
+
+include includes/footer.pug

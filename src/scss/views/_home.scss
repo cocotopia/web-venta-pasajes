@@ -1,0 +1,381 @@
+body {
+  background-color: #f2f3f7;
+}
+
+#alertDissmisingSection .alert {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+#preNavBarSection {
+  background-color: #157ed2;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#preNavBarSection .pipe {
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 10px;
+}
+
+#preNavBarSection a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 576px) {
+  #preNavBarSection .float-right {
+    margin: 0 auto;
+  }
+}
+
+#navBarSection .navbar-nav {
+  color: #fff;
+}
+
+#navBarSection .navbar-nav .nav-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+#navBarSection .navbar-nav .nav-link:hover {
+  background: #036cc0;
+  border-radius: 4px;
+}
+
+#navBarSection .navbar-nav .nav-link .icon-menu {
+  margin-right: 16px;
+  font-size: 1.6em;
+}
+
+#navBarSection .navbar-nav .nav-link .title-menu strong {
+  display: block;
+}
+
+#carouselHeader .carousel-inner .carousel-item {
+  height: 500px;
+  width: 100%;
+}
+
+#carouselHeader .carousel-inner > .carousel-item > img {
+  height: 500px;
+  width: 100%;
+}
+
+#booking-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 13%;
+}
+
+#principalesSection .card {
+  min-height: 400px;
+}
+
+@media screen and (max-width: 576px) {
+  #principalesSection .card {
+    min-height: 400px;
+  }
+
+  #principalesSection .mt-mb {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #afiladosSection .card img {
+    margin-bottom: 20px;
+  }
+}
+
+#footerSeccion footer {
+  background-color: rgb(18, 19, 24);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footerSeccion footer .checked {
+  color: orange;
+}
+
+#footerSeccion footer .starBorder {
+  text-shadow: 0 0 1px orange;
+}
+
+@media screen and (max-width: 576px) {
+  #footerSeccion .mt-mb {
+    margin-bottom: 30px;
+  }
+}
+
+/* Busqueda (Vista 2) */
+
+#buscadorSection {
+  background-color: rgb(18, 19, 24);
+}
+
+#resultadoBusquedaSection .tituloResultadoBusqueda span:nth-child(4) {
+  font-size: 0.6em;
+}
+
+#resultadoBusquedaSection .subTituloResultadoBusqueda {
+  font-size: 0.8em;
+}
+
+#resultadoBusquedaSection .informacionRutaHora {
+  font-size: 0.8em;
+}
+
+#resultadoBusquedaSection .informacionMatricula {
+  font-size: 0.8em;
+}
+
+#resultadoBusquedaSection .informacionEquipamiento {
+  font-size: 0.8em;
+}
+
+#resultadoBusquedaSection .barraPorcentajeTexto {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 740px) {
+  /*#resultadoBusquedaSection .card{
+          height: 320px;
+      }*/
+
+  #resultadoBusquedaSection
+    #carouselGaleria
+    .carousel-inner
+    > .carousel-item
+    > img {
+    height: 150px;
+  }
+
+  #resultadoBusquedaSection .informacionRutaHora {
+    font-size: 15px;
+  }
+
+  #resultadoBusquedaSection .informacionRutaHora > span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #resultadoBusquedaSection .informacionRutaPatente {
+    font-size: 12px;
+  }
+
+  #resultadoBusquedaSection .informacionEquipamiento {
+    font-size: 12px;
+  }
+
+  #resultadoBusquedaSection .barraPorcentajeTexto {
+    font-size: 12px;
+  }
+}
+
+/* Asiento seccion (vista 4) */
+#asientosSeccion .terminalEmbarque {
+  font-size: 15px;
+}
+
+#asientosSeccion .terminalDesembarque {
+  font-size: 15px;
+}
+
+#asientosSeccion .leyenda {
+  font-size: 15px;
+}
+
+#asientosSeccion .leyenda > span > span {
+  cursor: pointer;
+}
+
+#asientosSeccion .primerPiso {
+  height: 70px;
+  background-color: #157ed2;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#asientosSeccion .busEstructura {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  #asientosSeccion .busEstructura {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+#asientosSeccion .asiento-ocupado {
+  background-image: url("../images/asiento_ocupado.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  cursor: pointer;
+  /*width: 80px;
+      margin: 0 auto;
+      */
+}
+
+#asientosSeccion .asiento-ocupado span {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#asientosSeccion .asiento-disponible {
+  background-image: url("../images/asiento_disponible.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#asientosSeccion .asiento-disponible span {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#asientosSeccion .asiento-locura {
+  background-image: url("../images/asiento_locura.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#asientosSeccion .asiento-locura span {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#asientosSeccion .asiento-insuperable {
+  background-image: url("../images/asiento_insuperable.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#asientosSeccion .asiento-insuperable span {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#asientosSeccion .asiento-deocacion {
+  background-image: url("../images/asiento_deocacion.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#asientosSeccion .asiento-deocacion span {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #157ed2;
+}
+
+.badge-locura {
+  color: #fff;
+  background-color: #ff06fe;
+}
+
+/* General */
+
+.float-right {
+  float: right !important;
+}
+
+.color-primary {
+  color: #157ed2;
+}
+
+.bg-color-primary {
+  background-color: #157ed2;
+}
+
+.or-seperator {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  i {
+    padding: 0 10px;
+    background: #ffffff;
+    position: relative;
+    top: -14px;
+    z-index: 1;
+    font-style: normal;
+  }
+}
+.btn-facebook {
+  background: #507cc0 !important;
+  border: none;
+}
+
+.btn-google {
+  background: #df4930 !important;
+  border: none;
+}
+
+.nav-pills {
+  border: 1px solid #007bff;
+  border-radius: 25px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tabs-login-register {
+  width: 50%;
+  text-align: center;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.link-left {
+  border-radius: 25px 0px 0px 25px !important;
+}
+
+.link-right {
+  border-radius: 0px 25px 25px 0px !important;
+}
+
+.doc-iframe {
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 3;
+  height: 500px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .modal-login-register {
+    max-width: 400px;
+  }
+}

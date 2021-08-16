@@ -1,0 +1,21 @@
+section#carouselHeaderSection.d-none.d-sm-none.d-xl-block
+  #carouselHeader.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselHeader' data-slide-to='0')
+      li(data-target='#carouselHeader' data-slide-to='1')
+      li(data-target='#carouselHeader' data-slide-to='2')
+
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='./images/1400x800.jpg' alt='banner 1')
+      .carousel-item
+        img.d-block.w-100(src='./images/1400x800.jpg' alt='banner 2')
+      .carousel-item
+        img.d-block.w-100(src='./images/1400x800.jpg' alt='banner 3')
+
+    a.carousel-control-prev.d-none(href='#carouselHeader' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next.d-none(href='#carouselHeader' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next

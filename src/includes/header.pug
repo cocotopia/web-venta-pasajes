@@ -1,0 +1,169 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Transportes
+
+
+section#alertDissmisingSection
+  .alert.alert-info.alert-dismissible.fade.show.text-center(role='alert')
+    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque
+    | harum unde, cupiditate illum quas voluptatum rem saepe, perspiciatis
+    | aspernatur consequuntur laboriosam amet odit. Impedit dolorem distinctio
+    | unde quod incidunt.
+    button.close(type='button' data-dismiss='alert' aria-label='Close')
+      span(aria-hidden='true') &times;
+
+
+section#preNavBarSection
+  .container-fluid
+    .row
+      .col-sm-12.pt-2.pr-4
+        p.float-right
+          a(href='#') (052) 524146
+          span.pipe |
+          a(href='#' data-toggle="modal", data-target="#declaracionJurada") Declaración Jurada
+          span.pipe |
+          a(href='#') Sunat
+          span.pipe |
+          button.btn.btn-success.btn-sm(type='button', data-toggle="modal", data-target="#loginRegister")
+            | Iniciar Sesión 
+          span.pipe |
+          button.btn.btn-warning.btn-sm(type='button')
+            | Covid19
+
+
+section#navBarSection
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-color-primary
+    a.navbar-brand(href='#')
+      img(src='images/200x100.jpg' alt='Logo')
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      .ml-auto
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='#') 
+              span.fas.fa-route.icon-menu
+              span.title-menu
+                strong Viajes
+                | y destinos
+
+          li.nav-item
+            a.nav-link(href='#')
+              span.fas.fa-suitcase.icon-menu
+              span.title-menu
+                strong Condiciones
+                | de equipaje
+
+          li.nav-item
+            a.nav-link(href='#')
+              span.fas.fa-shield-alt.icon-menu
+              span.title-menu
+                strong Seguridad y 
+                | tecnología
+
+          li.nav-item
+            a.nav-link(href='#')
+              span.fas.fa-bus.icon-menu
+              span.title-menu
+                strong Nuestra
+                | flota
+
+          li.nav-item
+            a.nav-link(href='#')
+              span.fas.fa-people-arrows.icon-menu
+              span.title-menu
+                strong Servicio al
+                | cliente
+
+
+#declaracionJurada.modal.fade(tabindex='-1' role='dialog')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Declaración Jurada
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+
+      .modal-body
+        ul#myTab.nav.nav-tabs(role='tablist')
+          li.nav-item
+            a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') Menor de 14 años
+          li.nav-item
+            a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') Covid 19
+          li.nav-item
+            a#contact-tab.nav-link(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Mayor de 6 años
+        #myTabContent.tab-content
+          #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab')
+            iframe.doc-iframe(src='https://pdfobject.com/pdf/sample-3pp.pdf' width='600' height='780')
+
+          #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab')
+            iframe.doc-iframe(src='https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf' width='600' height='780')
+
+          #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
+            iframe.doc-iframe(src='https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf' width='600' height='780')
+
+
+#loginRegister.modal.fade(tabindex='-1' role='dialog')
+  .modal-dialog.modal-dialog-centered.modal-login-register(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Logo empresa
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+
+      .modal-body
+        ul#pills-tab.nav.nav-pills.mb-4.mt-2(role='tablist')
+          li.nav-item.tabs-login-register
+            a#pills-login-tab.nav-link.link-left.active(data-toggle='pill' href='#pills-login' role='tab' aria-controls='pills-login' aria-selected='true') Ingresar 
+          li.nav-item.tabs-login-register
+            a#pills-register-tab.nav-link.link-right(data-toggle='pill' href='#pills-register' role='tab' aria-controls='pills-register' aria-selected='false') Registrarse
+         
+        #pills-tabContent.tab-content
+          #pills-login.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-login-tab')
+            form
+              .form-group 
+                button.btn.btn-secondary.btn-block.btn-google(type="button")
+                  i.fab.fa-google.px-2 
+                  | Google
+              .form-group 
+                button.btn.btn-secondary.btn-block.btn-facebook(type="button")
+                  i.fab.fa-facebook.px-2 
+                  | Facebook
+
+            div.or-seperator
+              i o
+            
+            form
+              .form-group 
+                input.form-control(type='text' placeholder='Correo electrónico')
+              .form-group 
+                input.form-control(type='password' placeholder='Contraseña')
+              .form-group 
+                button.btn.btn-success.btn-block(type="button") Iniciar Sesión
+
+              .form-group.text-center 
+                a(href='#') ¿Olvisate tu contraseña?
+
+          #pills-register.tab-pane.fade(role='tabpanel' aria-labelledby='pills-register-tab')
+            form
+              .form-group 
+                input.form-control(type='text' placeholder='Nombres')
+              .form-group 
+                input.form-control(type='text' placeholder='Apellidos')
+              .form-group 
+                input.form-control(type='text' placeholder='Teléfono')
+              .form-group 
+                input.form-control(type='text' placeholder='Correo electrónico')
+              .form-group 
+                input.form-control(type='password' placeholder='Contraseña')
+              .form-group 
+                input.form-control(type='password' placeholder='Confirmar Contraseña')
+              .form-group 
+                button.btn.btn-success.btn-block(type="button") Registrarme
+         
+
+
+

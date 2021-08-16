@@ -1,0 +1,243 @@
+include includes/header.pug
+
+include includes/slider.pug
+
+section#booking-form.d-none.d-sm-none.d-xl-block
+  .container-fluid
+    .row
+      .col-12.col-xl-4.col-md-6
+        .card.mt-5.ml-xl-5(style='bottom: 65vh')
+          .card-body
+            h4.card-title.text-center.font-weight-bold
+              | Buscar Tours
+            p.card-text.text-center
+              | &iexcl;Encuentra el recorrido de tus sue&ntilde;os!
+            form(action='#')
+              .col-auto
+                label.sr-only(for='puntoPartida') Punto de Partida
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-map-marker-alt
+                  input#puntoPartida.form-control(type='text' placeholder='Punto de Partida')
+              .col-auto
+                label.sr-only(for='puntoFinal') Punto Final
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-map-marker-alt
+                  input#puntoFinal.form-control(type='text' placeholder='Punto Final')
+              .col-auto
+                label.sr-only(for='fecha') Fecha
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.far.fa-calendar-alt
+                  input#fecha.form-control(type='text' placeholder='Fecha')
+              .col-auto
+                label.sr-only(for='tipoFlota') Tipo Flota
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-car
+                  input#tipoFlota.form-control(type='text' placeholder='Tipo Flota')
+              .col-auto
+                button.btn.btn-success.btn-block
+                  | &iexcl;Encuentra Ahora!
+      .col-12.col-xl-4.col-md-6
+      .col-12.col-xl-4.col-md-12
+section.d-sm-block.d-xl-none
+  .container-fluid
+    .row
+      .col-12.col-xl-4.col-md-12
+        .card.mt-5.ml-xl-5
+          .card-body
+            h4.card-title.text-center.font-weight-bold
+              | Buscar Tours
+            p.card-text.text-center
+              | &iexcl;Encuentra el recorrido de tus sue&ntilde;os!
+            form(action='#')
+              .col-auto
+                label.sr-only(for='puntoPartida') Punto de Partida
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-map-marker-alt
+                  input#puntoPartida.form-control(type='text' placeholder='Punto de Partida')
+              .col-auto
+                label.sr-only(for='puntoFinal') Punto Final
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-map-marker-alt
+                  input#puntoFinal.form-control(type='text' placeholder='Punto Final')
+              .col-auto
+                label.sr-only(for='fecha') Fecha
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.far.fa-calendar-alt
+                  input#fecha.form-control(type='text' placeholder='Fecha')
+              .col-auto
+                label.sr-only(for='tipoFlota') Tipo Flota
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-car
+                  input#tipoFlota.form-control(type='text' placeholder='Tipo Flota')
+              .col-auto
+                button.btn.btn-success.btn-block
+                  | &iexcl;Encuentra Ahora!
+      .col-12.col-xl-4.col-md-6
+      .col-12.col-xl-4.col-md-12
+section#escogernosSection.pt-5
+  .container-fluid
+    .row
+      .col-12
+        .card
+          .card-body
+            h3.pb-5.font-weight-bold.text-center.text-uppercase
+              | &iquest;Por qu&eacute; escogernos?
+            .row
+              .col-lg-3.col-6.text-center
+                img.img-fluid(src='images/100x100.jpg' alt='')
+                p.mt-2.mb-0.font-weight-bold Lorem ipsum dolor
+                p Lorem ipsum dolor
+              .col-lg-3.col-6.text-center
+                img.img-fluid(src='images/100x100.jpg' alt='')
+                p.mt-2.mb-0.font-weight-bold Lorem ipsum dolor
+                p Lorem ipsum dolor
+              .col-lg-3.col-6.text-center
+                img.img-fluid(src='images/100x100.jpg' alt='')
+                p.mt-2.mb-0.font-weight-bold Lorem ipsum dolor
+                p Lorem ipsum dolor
+              .col-lg-3.col-6.text-center
+                img.img-fluid(src='images/100x100.jpg' alt='')
+                p.mt-2.mb-0.font-weight-bold Lorem ipsum dolor
+                p Lorem ipsum dolor
+section#principalesSection.pt-5
+  .container-fluid
+    .row
+      .col-lg-4.col-12
+        .card
+          .card-body
+            h3.card-title.text-center.font-weight-bold
+              | Lorem ipsum dolor
+            hr
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+      .col-lg-4.col-12
+        .card.mt-mb
+          .card-body
+            h3.card-title.text-center.font-weight-bold
+              | Lorem ipsum dolor
+            hr
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+      .col-lg-4.col-12
+        .card.mt-mb
+          .card-body
+            h3.card-title.text-center.font-weight-bold
+              | Lorem ipsum dolor
+            hr
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+            p.card-text
+              a(href='#') Lorem ipsum dolor sit amet
+section#afiladosSection.py-5
+  .container-fluid
+    .row
+      .col-12
+        .card
+          .card-body
+            h3.pb-5.font-weight-bold.text-center.text-uppercase
+              | EMPRESAS DE BUS AFILIADAS
+            .row
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+            .row.pt-3
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+            hr
+            h3.pb-5.font-weight-bold.text-center.text-uppercase
+              | OPCIONES DE PAGO
+            .row
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+            .row.pt-3
+              .col-lg-2.col-6
+              .col-lg-2.col-6
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+                center
+                  img(src='images/100x50.jpg' alt='')
+              .col-lg-2.col-6
+              .col-lg-2.col-6
+
+include includes/footer.pug

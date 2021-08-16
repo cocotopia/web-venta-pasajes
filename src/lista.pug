@@ -1,0 +1,233 @@
+include includes/header.pug
+
+section#buscadorSection
+  .container
+    .row
+      .col-12.py-5
+        .card
+          form(action='#')
+            .form-row.align-items-center.py-5.px-5
+              .col-lg-3.col-12
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-map-marker-alt
+                  input#origen.form-control(type='text' placeholder='Origen')
+              .col-lg-3.col-12
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.fas.fa-map-marker-alt
+                  input#origen.form-control(type='text' placeholder='Destino')
+              .col-lg-3.col-12
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                      i.far.fa-calendar-alt
+                  input#origen.form-control(type='text' placeholder='Fecha')
+              .col-lg-3.col-12
+                button.btn.btn-primary.mb-2.btn-block
+                  | ¡Encuentra ahora!
+
+nav(aria-label='breadcrumb')
+  ol.breadcrumb.nav-steps
+    li.breadcrumb-item.step.active(aria-current='page')
+      span.number 1 
+      | Ida 14/08/2021
+    li.breadcrumb-item.step
+      span.number 2 
+      | Asientos
+    li.breadcrumb-item.step
+      span.number 3
+      | Pago
+    li.breadcrumb-item.step
+      span.number 4
+      | Confirmación
+
+section#resultadoBusquedaSection
+  .container-fluid.py-5
+    .row
+      .col-lg-3.col-12.d-none.d-sm-none.d-xl-block
+        .row
+          .col-12
+            .card
+              .card-body
+                h5.card-title.font-weight-bold.text-uppercase
+                  | Principales rutas
+                .card-text.mt-5
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+          .col-12.mt-4
+            .card
+              .card-body
+                h5.card-title.font-weight-bold.text-uppercase
+                  | Principales destinos
+                .card-text.mt-5
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+          .col-12.mt-4
+            .card
+              .card-body
+                h5.card-title.font-weight-bold.text-uppercase
+                  | Principales agencias
+                .card-text.mt-5
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+                  p
+                    a(href='') Lorem ipsum, dolor sit
+      .col-xl-9.col-md-12.col-12.mt-lg-0.d-none.d-sm-none.d-md-block
+        .card
+          .card-body.bg-light
+            .row
+              .col-12
+                .card
+                  .card-body
+                    .row
+                      .col-lg-12.col-12
+                        h4.tituloResultadoBusqueda
+                          span.font-weight-bold Lima
+                          i.fas.fa-arrow-right.fa-xs
+                          span.font-weight-bold Tacna
+                          span.text-muted 18 de Junio del 2020
+                      .col-lg-12.col-12
+                        p.subTituloResultadoBusqueda.text-muted
+                          | Paso 1: Ida Selecciona tu servicio y horarios.
+                      .col-lg-12.col-12
+                        hr.mb-3.mt-0
+                      .col-lg-4.col-12
+                        #carouselGaleria.carousel.slide(data-ride='carousel')
+                          .carousel-inner
+                            .carousel-item.active
+                              img.d-block.w-100(src='images/200x150.jpg' alt='...')
+                            .carousel-item
+                              img.d-block.w-100(src='images/200x150.jpg' alt='...')
+                            .carousel-item
+                              img.d-block.w-100(src='images/200x150.jpg' alt='...')
+                          a.carousel-control-prev(href='#carouselGaleria' role='button' data-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.sr-only Previous
+                          a.carousel-control-next(href='#carouselGaleria' role='button' data-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.sr-only Next
+                      .col-lg-8.col-12
+                        .row
+                          .col-lg-6.col-12.mt-3.mt-lg-0
+                            p.informacionRutaHora
+                              span.font-weight-bold.text-uppercase Ruta:
+                              span.text-uppercase TACNA - JULIACA - CUZCO
+                          .col-lg-6.col-12
+                            p.informacionRutaHora
+                              span.font-weight-bold.text-uppercase Hora:
+                              span.text-uppercase 02:15 P.M.
+                          .col-12
+                            hr.mb-3.mt-0
+                          .col-lg-3.col-6
+                            p.informacionMatricula.mb-1
+                              span.text-uppercase A6D-951
+                          .col-lg-3.col-6
+                            p.informacionEquipamiento.mb-1
+                              span.text-uppercase Cena
+                            p.informacionEquipamiento.mb-1
+                              span.text-uppercase Wi-Fi
+                            p.informacionEquipamiento.mb-1
+                              span.text-uppercase Cargador
+                          .col-lg-3.col-6
+                            img.img-fluid(src='images/100x50.jpg' alt='')
+                          .col-lg-3.col-6
+                            button.btn.btn-success.btn-sm
+                              i.fas.fa-ticket-alt.pr-2(aria-hidden='true')
+                              |                                                 Comprar
+                          .col-12
+                            hr.mb-3.mt-3.mt-lg-0
+                          .col-lg-6.col-12
+                            p.barraPorcentajeTexto.mt-0.mb-1.font-weight-bold
+                              | 35/54
+                            .progress(style='height: 5px')
+                              .progress-bar(role='progressbar' style='width: 66%' aria-valuenow='66' aria-valuemin='0' aria-valuemax='100')
+                            p.barraPorcentajeTexto.mt-0.mb-0.float-right
+                              | 66%
+                          .col-lg-6.col-6
+                            button.btn.btn-info.btn-sm
+                              i.fab.fa-whatsapp.pr-2(aria-hidden='true')
+                              | WhatsApp
+                          .col-lg-6.col-6
+                            button.btn.btn-info.btn-sm
+                              i.fas.fa-phone-alt.pr-2(aria-hidden='true')
+                              | Tel&eacute;fono
+      .col-12.d-block.d-sm-block.d-md-none
+        .card
+          .card-body.pt-0.pl-0.pb-0
+            .row
+              .col-4.pr-0
+                img.img-fluid(src='images/100x50.jpg' alt='')
+              .col-8.pl-2
+                p.font-weight-bold.text-uppercase.informacionRutaHora.mb-1
+                  | Ruta: 
+                  span Tacna - Tacna - Tacna
+                p.font-weight-bold.text-uppercase.informacionRutaHora.mb-1
+                  | Hora: 
+                  span 02:50 P.M.
+              .col-12.ml-2
+                hr
+              .col-4.pr-0
+                #carouselGaleria.carousel.slide(data-ride='carousel')
+                  .carousel-inner
+                    .carousel-item.active
+                      img.d-block.w-100(src='images/200x150.jpg' alt='...')
+                    .carousel-item
+                      img.d-block.w-100(src='images/200x150.jpg' alt='...')
+                    .carousel-item
+                      img.d-block.w-100(src='images/200x150.jpg' alt='...')
+                  a.carousel-control-prev(href='#carouselGaleria' role='button' data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                  a.carousel-control-next(href='#carouselGaleria' role='button' data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+              .col-8.pl-2.pb-2
+                .row
+                  .col-12
+                  .col-6.mt-3
+                    p.informacionMatricula.mb-1
+                      span.text-uppercase A6D-951
+                  .col-6.mt-3
+                    p.informacionEquipamiento.mb-1
+                      span.text-uppercase Cena
+                    p.informacionEquipamiento.mb-1
+                      span.text-uppercase Wi-Fi
+                    p.informacionEquipamiento.mb-1
+                      span.text-uppercase Cargador
+                  .col-12.mt-3
+                    p.barraPorcentajeTexto.mt-0.mb-1.font-weight-bold
+                      | 35/54
+                    .progress(style='height: 5px')
+                      .progress-bar(role='progressbar' style='width: 66%' aria-valuenow='66' aria-valuemin='0' aria-valuemax='100')
+                    p.barraPorcentajeTexto.mt-0.mb-0.float-right
+                      | 66%
+                  .col-6.mt-3
+                    button.btn.btn-info.btn-sm.btn-block
+                      i.fab.fa-whatsapp.pr-2(aria-hidden='true')
+                      | WhatsApp
+                  .col-6.mt-3
+                    button.btn.btn-info.btn-sm.btn-block
+                      i.fas.fa-phone-alt.pr-2(aria-hidden='true')
+                      | Tel&eacute;fono
+
+
+include includes/footer.pug
